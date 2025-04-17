@@ -1,0 +1,98 @@
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-spacelift-cloud-infrastructure-automation
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Copyrights
+copyrights:
+  - name: "Cloud Posse, LLC"
+    url: "https://cloudposse.com"
+    year: "2021"
+
+# Canonical GitHub repo
+github_repo: cloudposse/terraform-spacelift-cloud-infrastructure-automation
+
+# Badges to display
+badges:
+  - name: Latest Release
+    image: https://img.shields.io/github/release/cloudposse/terraform-spacelift-cloud-infrastructure-automation.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/releases/latest
+  - name: Last Updated
+    image: https://img.shields.io/github/last-commit/cloudposse/terraform-spacelift-cloud-infrastructure-automation.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/commits
+  - name: Slack Community
+    image: https://slack.cloudposse.com/for-the-badge.svg
+    url: https://slack.cloudposse.com
+
+# List any related terraform modules that this module may be used with or that this module depends on.
+related:
+  - name: "terraform-provider-utils"
+    description: "The Cloud Posse Terraform Provider for various utilities."
+    url: "https://github.com/cloudposse/terraform-provider-utils"
+  - name: "terraform-yaml-stack-config"
+    description: "Terraform module that loads an opinionated stack configuration from local or remote YAML sources. It supports deep-merged variables, settings, ENV variables, backend config, and remote state outputs for Terraform and helmfile components."
+    url: "https://github.com/cloudposse/terraform-yaml-stack-config"
+  - name: "terraform-yaml-config"
+    description: "Terraform module to convert local and remote YAML configuration templates into Terraform lists and maps."
+    url: "https://github.com/cloudposse/terraform-yaml-config"
+
+# List any resources helpful for someone to get started. For example, link to the hashicorp documentation or AWS documentation.
+references:
+  - name: "Terraform Version Pinning"
+    description: "The required_version setting can be used to constrain which versions of the Terraform CLI can be used with your configuration"
+    url: "https://www.terraform.io/docs/configuration/terraform.html#specifying-a-required-terraform-version"
+  - name: "Spacelift"
+    description: "The most flexible CI/CD for Terraform"
+    url: "https://spacelift.io/"
+  - name: "Spacelift Documentation"
+    description: "Official documentation site for Spacelift"
+    url: "https://docs.spacelift.io/"
+  - name: "Open Policy Agent"
+    description: "Policy-based control for cloud-native environments"
+    url: "https://www.openpolicyagent.org/"
+  - name: "OPA Documentation"
+    description: "Open Policy Agent Documentation"
+    url: "https://www.openpolicyagent.org/docs/latest/"
+  - name: "Rego - OPA’s query and policy language"
+    description: "Rego focuses on providing powerful support for referencing nested documents and ensuring that queries are correct and unambiguous"
+    url: "https://www.openpolicyagent.org/docs/latest/policy-language/"
+  - name: "Example of using Rego policy language"
+    description: "Mutating Admissions Controllers with Open Policy Agent and Rego"
+    url: "https://blog.gripdev.xyz/2020/01/13/mutating-admissions-controllers-with-open-policy-agent-and-rego/"
+
+# Short description of this project
+description: |-
+  This repo contains a set of Terraform modules for implementing a CI/CD pipeline for Terraform infrastructure using Spacelift.
+
+  - [spacelift-policy](./modules/spacelift-policy) - Terraform module for creating Spacelift policies.
+  - [spacelift-space](./modules/spacelift-space) - Terraform module for creating Spacelift spaces.
+  - [spacelift-stack](./modules/spacelift-stack) - Terraform module for creating Spacelift stacks.
+  - [spacelift-stacks-from-atmos-config](./modules/spacelift-stacks-from-atmos-config) - Terraform module for extracting Spacelift stack config from Atmos config.
+
+# Introduction to the project
+#introduction: |-
+#  This is an introduction.
+
+# How to use this module. Should be an easy example to copy and paste.
+
+# usage: |-
+
+# Example usage
+# examples: |-
+
+# Other files to include in this README from the project folder
+#include:
+#  - "docs/targets.md"
+#  - "docs/terraform.md"
+
+# Contributors to this project
+contributors: []

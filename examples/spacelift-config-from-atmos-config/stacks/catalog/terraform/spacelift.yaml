@@ -1,0 +1,11 @@
+components:
+  terraform:
+    spacelift:
+      settings:
+        spacelift:
+          administrative: true
+          autodeploy: true
+      vars:
+        enabled: true
+        # This is to locally apply the stack
+        external_execution: true
